@@ -25,9 +25,10 @@ repo = "local"
 
 [[repos.hooks]]
 id = "rust-format"
-name = "Format Rust files with rustfmt"
+name = "Format Rust files with Dioxus"
 language = "system"
-entry = "pixi run rustfmt"
+entry = "pixi run dx fmt"
+pass_filenames = false
 types = ["rust"]
 
 [[repos.hooks]]
