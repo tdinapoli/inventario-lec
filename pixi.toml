@@ -1,0 +1,13 @@
+[workspace]
+channels = ["conda-forge"]
+name = "inventario"
+platforms = ["linux-64", "osx-arm64", "win-64"]
+
+[environments]
+default = ["rust"]
+
+[feature.rust.dependencies]
+rust = "*"
+rust-src = "*"
+rust-std-wasm32-unknown-unknown = "*"
+dioxus = "*"
