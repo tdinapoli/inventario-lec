@@ -12,6 +12,9 @@ rust-src = "*"
 rust-std-wasm32-unknown-unknown = "*"
 dioxus = "*"
 
+[feature.rust.tasks]
+serve = { cmd = "dx serve", description = "Serve the webapp" }
+
 [feature.lint.dependencies]
 prek = "*"
 tombi = ">0.7.28"

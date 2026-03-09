@@ -1,0 +1,24 @@
+[package]
+name = "inventario-lec"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+dioxus = { version = "0.6.0", features = ["fullstack"] }
+
+[features]
+default = ["web"]
+desktop = ["dioxus/desktop"]
+mobile = ["dioxus/mobile"]
+web = ["dioxus/web"]
+
+[profile]
+[profile.android-dev]
+inherits = "dev"
+
+[profile.server-dev]
+inherits = "dev"
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
